@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Jonathan Valencia</title>
 </head>
@@ -33,7 +34,7 @@
         </header>
         <main>
             <section id="particles-js" class="about">
-                <div class="section-container">
+                <div class="section-container" data-aos="zoom-in" data-aos-duration="1000">
                     <h1 class='name'><span class="c1" >{</span> Jonathan Valencia <span class="c1">}</span>  </h1> 
                     <p class='sobremi'> 
                         Desarrollador <span class="c1">Frontend</span> 
@@ -48,25 +49,26 @@
              
             </section>
             <section id="portafolio">
-                <h2>Portafolio</h2>
+                <h2 data-aos="fade-up" data-aos-duration="1500">Portafolio</h2>
                 <div class="container-portafolio">
-                    <div class="container-project">
+                    <div class="container-project" data-aos="fade-up" data-aos-duration="2000">
                         <div class="project--img">
                            <a href="">
-                            <img src="https://brittanychiang.com/static/3936989a99991beb6d649d7a7039df60/f47db/demo.avif" alt="">
+                            <img src="assets/p1.png" alt="">
                           </a>
                         </div>
                         
                         <div class="project-info">
-                            <h3 class="c1"> Spotify Profile</h3>
+                            <h3 class="c1"> Artes publicitarias</h3>
                             <div class="info--description">
-                                <p>A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track</p>
+                                <p>Landing page para visualizar productos publicitarios</p>
                             </div>
                    
                             <ul class="info--skills">
-                                <li>React</li>
-                                <li>Heroku</li>
-                                <li>Spotify API</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Javascript</li>
+                                <li>Responsive Design</li>
                             </ul>
                   
                             <ul class="info--links">
@@ -76,7 +78,7 @@
                             
                         </div>
                     </div>
-                    <div class="container-project">
+                    <div class="container-project" data-aos="fade-up" data-aos-duration="2000">
                         <div class="project--img c-right">
                            <a href="">
                             <img src="https://brittanychiang.com/static/3936989a99991beb6d649d7a7039df60/f47db/demo.avif" alt="">
@@ -121,6 +123,10 @@
     <script src="js/script.js"></script>
     <script src="js/particles.min.js"></script>
     <script src="js/app.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>
