@@ -4,12 +4,15 @@
     box-sizing: border-box;
 }
 
-
+html{
+    scroll-behavior: smooth;
+}
 body{
     
     font-family: 'Roboto', sans-serif;
  
 }
+
 #root{
     overflow: hidden;
 
@@ -141,7 +144,7 @@ header {
 }
 .c1{
     /*color: rgb(142, 49, 247);*/
-    color: rgb(172, 255, 90)
+    color: rgb(172, 255, 90);
 }
 
 .sobremi{
@@ -159,12 +162,18 @@ header {
 
     
 }
+/*esto es para quitar*/
+main > section{
+    width: 100%;
+    height: 100vh;
 
+}
 
 
 @media (min-width: 800px) {
     header{
         height: 100px;
+       
     }
     .menu-burger{
         display: none;
@@ -173,14 +182,15 @@ header {
         padding-top: 0;
         position: relative;
         visibility: visible;
-        width: 60%;
+   
         height: auto;
-    
+        text-align: left;
         background-color: #1C1D25;
         transition: none;
         z-index: 1;
         transform:none;
         padding: 0;
+        
        
     }
     
@@ -190,9 +200,29 @@ header {
         flex-direction: row;
         padding: 0;
     }
-    
-    .about{
-        height: calc(100vh - 60px);
+    .nav-menu li a{
+        letter-spacing: 2px;
+    }
+    .nav-menu li{
+ 
+        padding: 0 30px;
     }
     
+    .nav-menu li span{
+        display: block;
+        width: 80%;
+        height: 5px;
+        background-color:rgb(172, 255, 90);
+    
+        transform-origin: left 100%;
+        transform: scaleX(0);
+        transition: all 500ms ease;
+
+    }
+    
+    .nav-menu li:hover > span {
+        transform: scaleX(1);
+
+    }
+   
 }
