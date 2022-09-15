@@ -16,6 +16,6 @@ function animateBars(){
     linea1.classList.toggle('line1__menuActivate');
     linea2.classList.toggle('line2__menuActivate');
     linea3.classList.toggle('line3__menuActivate');
-    nav_menu.classList.toggle('right');
+   
 }
 
