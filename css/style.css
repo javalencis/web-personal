@@ -10,6 +10,8 @@ html{
 body{
     
     font-family: 'Roboto', sans-serif;
+    background:  #1C1D25;
+    color: white;
  
 }
 
@@ -162,13 +164,66 @@ header {
 
     
 }
-/*esto es para quitar*/
+
 main > section{
     width: 100%;
-    height: 100vh;
+    height: auto;
+    padding: 30px;
+}
+#portafolio h2{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.container-portafolio{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
 
 }
+.container-project{
+    width: 100%;
+    height: auto;
+ 
+    position: relative;
+   
+    
+}
+.project--img img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 1;
+}
 
+.project-info{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(20, 20, 20, 0.8);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 10px;
+    z-index: 2;
+    
+  
+}
+
+.info--description{
+    color: #b0b2c3
+}
+.info--skills li{
+    display: inline-block;
+    margin-right: 10px;
+}
+.info--links{
+    display: inline-block;
+}
 
 @media (min-width: 800px) {
     header{
@@ -224,5 +279,46 @@ main > section{
         transform: scaleX(1);
 
     }
+    .container-project{
+        width: 80%;
+        max-width: 800px;
+        margin: 25px auto;
+        height: auto;
+        position: relative;
+    }
+    .project--img{
+        width: 60%;
+        position: absolute;
+        top:0;
+        left: 0;
+    }
+    .project--img img{
+        width: 100%;
+      
+    }
+    .project-info{
+        width: 70%;
+        position: relative;
+        float: right;
+        background: none;
+        text-align: right;
+     
+    }
+    .info--description{
+        background-color: #112240;
+        padding: 20px 40px;
+        border-radius: 5px;
+    }   
+    .c-right{
+        position: relative;
+        float: right;
+    }
+    .c-left{
+        position: absolute;
+        top:0;
+        left: 0;
+        text-align: left;
+    }
    
+
 }
