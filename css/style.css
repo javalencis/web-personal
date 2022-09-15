@@ -195,10 +195,10 @@ main {
 }
 
 .project--img{
+    width: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    right: 0;
     bottom: 0;
     z-index: -1;
     overflow: hidden;
@@ -227,8 +227,36 @@ main {
 }
 
 
-@media (min-width: 600){
+@media (min-width: 600px){
+    .container-portafolio{
+        max: width 800px;px;
+        margin: 0 auto;
+    }
+    .project--img{
+        position: relative;
+        width: 60%;
+        min-height: 300px;
+   
+    }
+    .project--img img{
+        object-fit: contain;
     
+    }
+    .project-info{
+        position: absolute;
+        width: 70%;
+        top: 0;
+        right: 0;
+        background:none;
+        text-align: right;
+  
+    }
+    .info--description{
+        background-color: #112240;
+        padding: 20px;
+        border-radius: 5px;
+        color: #b0b2c3;
+    }
 }
 
 @media (min-width: 800px) {
